@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "description": "Route all requests to worker",
+  "routes": [
+    {
+      "pattern": "/*",
+      "script": "_worker.js"
+    }
+  ]
+}
