@@ -4,7 +4,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "wrangler pages dev .",
-    "deploy": "wrangler pages deploy . --compatibility-date 2024-04-30"
+    "deploy": "wrangler pages deploy ."
   },
   "dependencies": {
     "hono": "^4.2.9"
