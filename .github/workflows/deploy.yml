@@ -1,6 +1,22 @@
-# Workflow ini disabled. Gunakan Cloudflare Pages native GitHub integration
+# Workflow ini disabled karena menggunakan Cloudflare Pages native GitHub integration
+# 
+# Untuk setup:
 # 1. Login ke https://dash.cloudflare.com/
-# 2. Pages > Connect to Git > image-hosting repository
-# 3. Build settings: Framework = None, Build command = npm run build, Build output directory = dist
+# 2. Pages > image-hosting > Settings > Build & Deployments > GitHub
+# 3. Build command: npm run build
+# 4. Build output directory: dist
+# 5. Node version: 22
+#
+# Setiap push ke main akan auto-deploy
+
+name: Disabled
+on:
+  workflow_dispatch:
+jobs:
+  disabled:
+    runs-on: ubuntu-latest
+    steps:
+      - name: This workflow is disabled
+        run: echo "Using Cloudflare Pages native GitHub integration instead"
 
 

@@ -1,11 +1,5 @@
 name = "cf-image-hosting"
-pages_build_output_dir = "./dist"
 compatibility_date = "2024-04-30"
-
-# Untuk GitHub Pages native integration:
-# Build command: npm run build
-# Build output directory: dist
-# Tidak perlu deploy command
 
 [env.production.vars]
 API_HOST = "https://telegra.ph"
